@@ -1,0 +1,15 @@
+dependencyResolutionManagement {
+    repositoriesMode.set(RepositoriesMode.FAIL_ON_PROJECT_REPOS)
+    repositories {
+        maven {
+            allowInsecureProtocol = true
+            url "http://101.34.72.129:8081/repository/android-group/"
+        }
+    }
+}
+rootProject.name = "AndroidJavaDemo"
+include ':app'
+include ':network'
+include ':datastore'
+include ':customui'
+include ':common'
