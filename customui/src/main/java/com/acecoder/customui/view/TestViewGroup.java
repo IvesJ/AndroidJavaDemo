@@ -4,21 +4,21 @@ import android.content.Context;
 import android.util.AttributeSet;
 import android.view.ViewGroup;
 
-public class TestView extends ViewGroup {
+public class TestViewGroup extends ViewGroup {
 
-    public TestView(Context context) {
+    public TestViewGroup(Context context) {
         super(context);
     }
 
-    public TestView(Context context, AttributeSet attrs) {
+    public TestViewGroup(Context context, AttributeSet attrs) {
         super(context, attrs);
     }
 
-    public TestView(Context context, AttributeSet attrs, int defStyleAttr) {
+    public TestViewGroup(Context context, AttributeSet attrs, int defStyleAttr) {
         super(context, attrs, defStyleAttr);
     }
 
-    public TestView(Context context, AttributeSet attrs, int defStyleAttr, int defStyleRes) {
+    public TestViewGroup(Context context, AttributeSet attrs, int defStyleAttr, int defStyleRes) {
         super(context, attrs, defStyleAttr, defStyleRes);
     }
 
