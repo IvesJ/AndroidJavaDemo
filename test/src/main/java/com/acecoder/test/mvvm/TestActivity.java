@@ -9,6 +9,7 @@ import android.widget.Button;
 import com.acecoder.test.R;
 import com.acecoder.test.jetpack.lifecycle.LifecycleTestActivity;
 import com.acecoder.test.jetpack.livedata.LiveDataTestActivity;
+import com.acecoder.test.jetpack.viewmodel.ViewModelTestActivity;
 
 public class TestActivity extends AppCompatActivity {
 
