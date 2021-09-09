@@ -8,6 +8,7 @@
     <option name="filePathToZoomLevelMap">
       <map>
         <entry key="..\:/Android_Dev/TestCode/AndroidJavaDemo/app/src/main/res/layout/activity_main.xml" value="0.31296296296296294" />
+        <entry key="..\:/Android_Dev/TestCode/AndroidJavaDemo/test/src/main/res/layout/activity_test.xml" value="0.36614583333333334" />
         <entry key="..\:/Code/Android Studio/Test_Dev/AndroidJavaDemo/test/src/main/res/layout/activity_test.xml" value="0.1" />
       </map>
     </option>
@@ -18,7 +19,7 @@
     <option name="priority" value="Medium" />
     <option name="excludeFilter" value="" />
   </component>
-  <component name="ProjectRootManager" version="2" languageLevel="JDK_1_8" default="true" project-jdk-name="1.8" project-jdk-type="JavaSDK">
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="1.8" project-jdk-type="JavaSDK">
     <output url="file://$PROJECT_DIR$/build/classes" />
   </component>
   <component name="ProjectType">

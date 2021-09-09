@@ -1,25 +1,39 @@
 package com.acecoder.test.mvvm;
 
 import androidx.appcompat.app.AppCompatActivity;
-import androidx.databinding.DataBindingUtil;
-import androidx.databinding.ViewDataBinding;
-import androidx.lifecycle.ViewModel;
-import androidx.lifecycle.ViewModelProvider;
 
+import android.content.Intent;
 import android.os.Bundle;
+import android.widget.Button;
 
 import com.acecoder.test.R;
+import com.acecoder.test.jetpack.lifecycle.LifecycleTestActivity;
+import com.acecoder.test.jetpack.livedata.LiveDataTestActivity;
 
 public class TestActivity extends AppCompatActivity {
 
-    private ViewDataBinding mViewDataBinding;
-    private TestViewModel mTestViewModel;
+    private Button jump;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        mViewDataBinding = DataBindingUtil.setContentView(this, R.layout.activity_test);
-        mTestViewModel = new ViewModelProvider(this).get(TestViewModel.class);
-        mViewDataBinding.setLifecycleOwner(this);
+        setContentView(R.layout.activity_test);
+        jump = findViewById(R.id.jump);
+        init();
+        initListener();
+    }
+
+    public void jumpToJetpackTest() {
+        Intent intent = new Intent(this, LiveDataTestActivity.class);
+        startActivity(intent);
+    }
+
+    public void init() {
+    }
+
+    public void initListener() {
+        jump.setOnClickListener((view)->{
+            jumpToJetpackTest();
+        });
     }
 }
