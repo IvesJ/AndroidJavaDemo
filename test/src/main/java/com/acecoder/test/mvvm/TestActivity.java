@@ -2,8 +2,10 @@ package com.acecoder.test.mvvm;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.app.Activity;
 import android.content.Intent;
 import android.os.Bundle;
+import android.util.Log;
 import android.widget.Button;
 
 import com.acecoder.test.R;
@@ -22,6 +24,12 @@ public class TestActivity extends AppCompatActivity {
         jump = findViewById(R.id.jump);
         init();
         initListener();
+
+        ClassLoader classLoader = getClassLoader();
+        Log.i("classLoader", "onCreate: " + classLoader);
+
+        ClassLoader classLoader1 = Activity.class.getClassLoader();
+        Log.i("classLoader", "onCreate: " + classLoader1);
     }
 
     public void jumpToJetpackTest() {
