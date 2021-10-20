@@ -1,4 +1,4 @@
-package com.acecoder.datastore.utils;
+package com.acecoder.datastore.mmkv;
 
 import android.content.Context;
 import android.os.Build;

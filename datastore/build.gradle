@@ -1,5 +1,6 @@
 plugins {
     id 'com.android.library'
+    id 'org.greenrobot.greendao'
 }
 
 android {
@@ -11,7 +12,6 @@ android {
         versionCode 1
         versionName "1.0"
 
-        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
         consumerProguardFiles "consumer-rules.pro"
     }
 
@@ -25,10 +25,22 @@ android {
         sourceCompatibility JavaVersion.VERSION_1_8
         targetCompatibility JavaVersion.VERSION_1_8
     }
+
+    greendao {
+        // 数据库版本号
+        schemaVersion 1
+        // 生成数据库文件的目录
+        targetGenDir 'src/main/java'
+        // 生成的数据库相关文件的包名
+        daoPackage 'com.acecoder.datastore.greendao.db'
+    }
 }
 
 dependencies {
-
-    implementation 'com.tencent:mmkv-static:1.2.10'
-    implementation 'com.getkeepsafe.relinker:relinker:1.4.4'
+    api 'com.tencent:mmkv-static:1.2.10'
+    api 'com.getkeepsafe.relinker:relinker:1.4.4'
+    //数据库GreenDao
+    api 'org.greenrobot:greendao:3.3.0'
+    //数据库加密依赖
+    api 'net.zetetic:android-database-sqlcipher:4.4.3'
 }

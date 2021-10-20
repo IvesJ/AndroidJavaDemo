@@ -7,7 +7,7 @@ import androidx.appcompat.app.AppCompatActivity;
 /**
  * @Description LifeCycle组件学习
  * @Date   2021/9/9  9:29
- * @Author  AceCoder
+ * @Author  AceCoderjghk87-986
  */
 public class LifecycleTestActivity extends AppCompatActivity {
 
